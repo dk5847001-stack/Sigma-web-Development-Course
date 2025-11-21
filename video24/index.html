@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS shadow</title>
+    <style>
+        .box{
+            border: 2px solid rgb(15, 1, 1);
+            padding: 34px;
+            box-shadow: 5px 14px 5px rgb(90, 83, 83)
+        }
+        .text-element{
+            text-shadow: -1px -1px 0px rgb(215, 31, 13);
+            outline: 2px solid black;
+            border: 3px solid;
+            border-radius: 40px;
+            outline-offset: 30px;
+            margin: 6px auto;
+            padding: 5px auto;
+        }
+    </style>
 </head>
 <body>
-    
+   <div class="box">
+    I am a box
+   </div> 
+   <br><br>
+   <p class="text-element">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos tenetur doloremque quod distinctio sed sequi nemo, amet exercitationem fuga reprehenderit ratione nulla inventore impedit expedita sapiente facere magni sit quidem.
+   </p>
 </body>
 </html>
