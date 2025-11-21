@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple use of selector</title>
+    <style>
+        /* pseudo selector */
+        a:visited {
+            background-color: rgb(201, 180, 180);
+        }
+
+        a:active {
+            background-color: aquamarine;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        a:link {
+            background-color: yellowgreen;
+        }
+        /* Child selector */
+        div>p{
+            background-color: aqua;
+            color: red;
+        }
+        /* Descendent selector */
+        div > article > p{
+            background-color: cadetblue;
+            color: blue;
+        }
+        .red{
+            background-color: rgb(248, 171, 171);
+        }
+        #green p{
+            background-color: yellow;
+        }
+        /* Universal Selector */
+        *{
+            background-color: aquamarine;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to selector, use in html coding</h1>
+        <a href="https://www.google.com">Go to Google</a>
+    </div>
+    <br>
+
+    <main>
+<div>
+    <article>
+        <p>I am the Descendant selector</p>
+    </article>
+    <p>I am the first child selector</p>
+</div>
+    </main>
+    <div class="red">
+    I am the class selector
+    </div>
+    <div id="green">
+        <p>I am id selector</p>
+    </div>
+</body>
+
+</html>

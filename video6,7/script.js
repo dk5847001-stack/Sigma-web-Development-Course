@@ -1,0 +1,2 @@
+alert(webkitURL)
+screenLeft(dlkdj)

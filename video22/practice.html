@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border, margine, background</title>
+    <style>
+        .box {
+            color: blue;
+            border: 4px solid black;
+            width: 85vw;
+            margin: 10px auto;
+            background-color: rgb(177, 198, 217);
+            min-height: 80px;
+        }
+
+        .para {
+            color: brown;
+            background-color: aquamarine;
+            border: 4px solid blue;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80vw;
+            min-height: 80px;
+        }
+
+        .dk {
+            background-color: antiquewhite;
+            border: 4px solid;
+            min-height: 80px;
+            margin: auto;
+            width: 85vw;
+        }
+
+        .dk>div {
+            color: blue;
+            border: 3px solid rgb(191, 3, 44);
+            margin: 5px;
+        }
+
+        .dk>div>div {
+            color: rgb(5, 106, 29);
+            border: 4px solid blue;
+            width: 50%;
+            margin: 5px;
+        }
+        .dk > div > div > div{
+            color: red;
+            border: 2px solid rgb(209, 5, 199);
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">I am a box</div>
+    <div class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit explicabo impedit tempora possimus asperiores
+        exercitationem odio, totam officiis dolore saepe cupiditate provident sunt doloremque delectus, repellat
+        accusamus excepturi perspiciatis similique, aliquam eligendi officia. Reprehenderit, vitae fugit ut ab sequi
+        esse eum a eaque accusamus. Nulla iusto voluptatibus at omnis tenetur.
+    </div>
+    <div class="dk">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iste totam atque aliquam corrupti dolorem
+            pariatur debitis minima modi? Eaque porro dolor officia minima et itaque repellendus, ipsa, natus ad laborum
+            ab ea doloribus odio temporibus totam, sunt vel! Dolorum voluptates voluptatibus laboriosam corrupti error
+            aut esse placeat et blanditiis?
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corporis minima architecto quaerat vitae
+                eos maiores consequatur repudiandae saepe quisquam nisi hic, distinctio aspernatur facilis recusandae
+                temporibus inventore ea. Accusantium.
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, obcaecati?
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

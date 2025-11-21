@@ -1,0 +1,1 @@
+alert("This quiz for all students")

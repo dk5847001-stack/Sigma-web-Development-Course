@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        /* The specificity of this selecter is : 1+10 */
+        h1.cpurple{
+            color: rgb(203, 46, 46);
+        }
+        /* The specificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+        /* The specificity of this selecter is : 10 */
+        .cred{
+            color: azure;
+        }
+        /* The specificity of this selecter is : 10 */
+        .cpurple{
+            color: rgb(110, 8, 110);
+        }
+        /* The specificity of this selecter is 10 */
+        [data-x=a]{
+            color: rgb(16, 231, 37);
+        }
+        /* The specificity of this selector is 1+10+10+10+10=41 */
+        a.harry-clall.Dilkhush-class[href]:hover{
+            color: antiquewhite;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>
+        <div class="yellow cred cpurple" data-x="a">Hy gyes I am trying to css specificity</div>
+    </h1>
+</body>
+</html>
