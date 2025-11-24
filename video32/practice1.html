@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        body {
+            background-color: gray;
+            padding: 20px 10px;
+            display: flex;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            width: 198px;
+            min-height: 244px;
+            border-radius: 9px;
+            box-shadow: 0px 0px 10px 2px;
+            padding: 0 0 29px 0;
+            margin: 10px;
+        }
+
+        .image img {
+            padding: 5px;
+            border-radius: 9px;
+        }
+        .capsules {
+            font-size: 12px;
+            padding: 0 14px;
+        }
+
+        .capsules span {
+            border: 1px solid gray;
+            padding: 1px 9px;
+            margin: 5px;
+            border-radius: 14px;
+        }
+
+        .containt {
+            padding: 4px 6px;
+        }
+
+        .containt p {
+            font-size: 11px;
+            font-family: "Roboto Mono", monospace;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            border-radius: 14px;
+            padding: 4px 5px;
+            background-color: rgb(216, 216, 249);
+            color: blue;
+            border: none;
+            font-size: 11px;
+            font-weight: bold;
+
+        }
+        .button button:hover{
+            background-color: aquamarine;
+            color: red;
+            font-size: 20px;
+        }
+        .capsules span:hover{
+            background-color: aqua;
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h2:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img width="188px"
+                src="https://images.unsplash.com/photo-1650189545690-c8c3d5ee0405?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwb24lMjBib2F0fGVufDB8fDB8fHww"
+                alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="containt">
+            <h2>Dilkhush</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae repudiandae soluta dolores
+                molestias rerum sit porro nam, necessitatibus illum, labore mollitia laborum!</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="image">
+            <img width="188px"
+                src="https://images.unsplash.com/photo-1650189545690-c8c3d5ee0405?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwb24lMjBib2F0fGVufDB8fDB8fHww"
+                alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="containt">
+            <h2>Dilkhush</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae repudiandae soluta dolores
+                molestias rerum sit porro nam, necessitatibus illum, labore mollitia laborum!</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+    <div class="card">
+
+        <div class="image">
+            <img width="188px"
+                src="https://images.unsplash.com/photo-1650189545690-c8c3d5ee0405?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwb24lMjBib2F0fGVufDB8fDB8fHww"
+                alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="containt">
+            <h2>Dilkhush</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, recusandae repudiandae soluta dolores
+                molestias rerum sit porro nam, necessitatibus illum, labore mollitia laborum!</p>
+        </div>
+        <div class="button">
+            <button>Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>
