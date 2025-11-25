@@ -2,3 +2,18 @@ body{
     background-color: rgb(189, 173, 162);
     color: rgb(3, 21, 11);
 }
+p{
+    border: 3px solid;
+    padding: 10px;
+}
+p:hover{
+    background-color: aqua;
+    color: red;
+    margin: 20px auto;
+    box-shadow: 4px 8px 20px black;
+    border-radius: 16px;
+}
+p::selection{
+    background-color: bisque;
+    color: red;
+}
