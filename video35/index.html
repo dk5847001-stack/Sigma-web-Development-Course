@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black
+            ;
+        }
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-line {
+            color: rgb(240, 86, 3);
+            font-size: 25px;
+        }
+
+       p, a, .box, [data-color="primary"] {
+margin-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: blue;
+        }
+        .boxes::before{
+            content: "Dilkhush is good";
+        }
+        .boxes::after{
+            content: "Sigma courses is very good";
+            color: red;
+        }
+        ::selection{
+            color: red;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: brown;
+            font-size: 34px;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-color="primary" class="boxes">
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box and Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptates
+            iure pariatur culpa hic fugiat facere possimus fuga, minus, voluptas velit error rerum? Nemo minima dolorum
+            possimus iste ex sapiente cum esse! Laudantium, illo? Repellat beatae pariatur obcaecati similique eaque
+            nostrum nobis non possimus magni? Esse quidem eos sint ullam facere quaerat beatae officia optio ratione,
+            omnis doloribus eligendi, impedit ducimus enim perspiciatis dicta possimus dolore error pariatur nisi!
+            Recusandae, alias aspernatur? Totam amet esse sit sequi soluta aliquam excepturi quibusdam, inventore
+            blanditiis ullam consequatur odio nobis dolore earum labore accusantium unde numquam tenetur reiciendis
+            optio pariatur eos possimus eum rerum. Mollitia vel possimus fuga aliquam provident quidem at excepturi
+            consectetur. Dolor nihil, placeat deserunt libero numquam voluptatum facere incidunt voluptate unde fugiat
+            necessitatibus nesciunt nisi voluptatem ipsum nostrum quod dignissimos. Commodi voluptates ab aspernatur
+            accusamus inventore suscipit. Eaque sit necessitatibus ipsum est esse? Nulla sint consectetur itaque odit
+            dolorum, maiores quasi exercitationem, eos praesentium officiis debitis, nostrum corrupti voluptatum ad!
+            Ipsam, dignissimos! Iste iusto sapiente dolorum quas. Laudantium minus laboriosam sit corrupti optio nemo,
+            dolore et consectetur eveniet obcaecati tempore aliquam hic. Quasi laborum repudiandae a, delectus,
+            distinctio quis voluptas omnis quo velit, adipisci odit sunt accusantium deserunt debitis eaque ipsum
+            aliquam illo doloremque id laudantium illum fugiat doloribus ratione dolore. Accusantium dolor corrupti sint
+            eligendi voluptatibus at, non, quibusdam repellendus similique, dolorem laborum distinctio totam assumenda
+            atque labore. Pariatur, quos dolore!</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
