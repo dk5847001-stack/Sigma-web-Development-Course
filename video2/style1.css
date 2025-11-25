@@ -1,0 +1,40 @@
+*{
+    padding: 3px;
+    margin: 10px;
+    background-color: white;
+}
+body{
+    background-color: rgb(223, 128, 128);
+    padding: 20px;
+}
+span{
+    color: blue;
+    margin: 20px;
+}
+span::selection{
+    background-color: black;
+    color: red;
+}
+div::before{
+    content: "I am Dikhush Kumar";
+}
+div::after{
+    content: "Hey! I am also Dilkhush Kumar";
+}
+p{
+    border: 3px solid;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 4px 6px 23px;
+    border-radius: 30px;
+    font-variant: small-caps;
+    font-display: fallback;
+    font-feature-settings: "blwm";
+}
+span:hover{
+    background-color: black;
+    color: red;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
