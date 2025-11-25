@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable practice</title>
+    <style>
+        :root {
+            --color: black;
+            --seccolor: green;
+            --defpad: 23px --defop:0.3;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div:first-child {
+            background-color: var(--seccolor);
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            padding: 34px;
+            opacity: var(--defop);
+            margin: 20px auto;
+            border: 2px solid;
+            list-style: none;
+        }
+
+        .container {
+            background-color: aqua;
+        }
+
+        ul li:first-child {
+            background-color: var(--color);
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contect</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab asperiores earum, sed possimus ea sint
+        perferendis velit nesciunt optio id voluptate dolore voluptates. Qui aut modi id ducimus pariatur?
+    </div>
+</body>
+
+</html>

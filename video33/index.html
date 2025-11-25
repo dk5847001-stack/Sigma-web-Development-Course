@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            --color: rgb(119, 15, 15);
+            --seccolor: blue;
+            --thcolor: rgb(8, 250, 250);
+        }
+        nav{
+            margin: 20px;
+            padding: 20px;
+            background-color: var(--color);
+            color: var(--seccolor);
+        }
+        nav span{
+            padding: 15px;
+            margin: 20px;
+            border: 1px solid gray;
+        }
+        nav span:first-child{
+            color: var(--thcolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <span>Home</span>
+            <span>About</span>
+            <span>Contect</span>
+        </nav>
+    </div>
+</body>
+
+</html>
