@@ -30,3 +30,9 @@ table:hover{
     background-color: bisque;
     color: red;
 }
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration:dotted;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
