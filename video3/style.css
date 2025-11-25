@@ -2,3 +2,16 @@ body{
     background-color: aqua;
     color: brown;
 }
+div{
+    border: 1px solid gray;
+}
+div::selection{
+    background-color: wheat;
+    color: red;
+}
+div:hover{
+    background-color: wheat;
+    border-radius: 12px;
+    box-shadow: 4px 7px 20px;
+    padding: 10px;
+}
