@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS || pseudo selector</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 1%;
+            margin: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        .box:first-child {
+            background-color: gray;
+        }
+
+        .box::first-line {
+            color: red;
+
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            margin: 20px;
+        }
+
+        .box:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        .boxes::before {
+            content: "Hey I am Dilkhush Kumar";
+        }
+
+        .boxes::after {
+            content: "Yes! I am also Dilkhush Kumar";
+        }
+
+        ::selection {
+            background-color: black;
+            color: red;
+        }
+
+        .box::first-letter {
+            font-size: 30px;
+            color: blue;
+            font-size: 40px;
+        }
+
+        input::placeholder {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input{
+            border: 4px solid red;
+            padding: 20px;
+            min-width: 10px;
+            min-height: 7px;
+            box-shadow: 3px 9px 33px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Please Enter here your name..."><br><br>
+    </div>
+</body>
+
+</html>
