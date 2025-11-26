@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laout Design using CSS & html</title>
+    <style>
+        :root {
+            --primary-color: purple;
+            --secondary-color: cyan;
+            --text-color: white;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 10px;
+            position: sticky;
+            box-shadow: 0px 1px 18px 2px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline;
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            color: var(--text-color);
+            padding: 13px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div {
+            display: flex;
+        }
+
+        div.box1 {
+            width: 40vw;
+            height: 20vh;
+            border: 2px solid;
+            margin: 20px 49px 0 20px;
+            box-shadow: 0px 1px 6px 2px;
+            padding: 5px;
+            border-radius: 19px;
+            background-color: rgb(222, 244, 191);
+        }
+
+        div.box1:hover {
+            background-color: rgb(14, 0, 0);
+            color: red;
+        }
+
+        div.box2:hover {
+            background-color: rgb(14, 0, 0);
+            color: red;
+        }
+
+        div.box2 {
+            width: 40vw;
+            height: 20vh;
+            border: 2px solid;
+            margin: 20px 20px 0 10px;
+            box-shadow: 0px 1px 6px 2px;
+            padding: 5px;
+            border-radius: 19px;
+            background-color: rgb(222, 244, 191);
+        }
+
+        .laout {
+            width: 80vw;
+            border: 2px solid black;
+            height: 10vh;
+            border-radius: 39px;
+            margin: 30px auto;
+            box-shadow: 0px 1px 6px 2px;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            color: rgb(222, 0, 152);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contect Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div class="box box1">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+        <div class="box box2">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+    </div>
+    <div class="laout"><br>
+          Hey! Welcome to my Website
+    </div>
+
+     <div>
+        <div class="box box1">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+        <div class="box box2">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+    </div>
+    <div class="laout"><br>
+           dilkhush735.blogspot.com/-
+    </div>
+
+    <div>
+        <div class="box box1">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+        <div class="box box2">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+    </div>
+    <div class="laout"><br>
+           dilkhush735.blogspot.com/-
+    </div>
+</body>
+
+</html>
