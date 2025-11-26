@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS multicolor website</title>
+    <style>
+        body{
+            background-color: var(--secondary-color);
+        /* }
+        :root{
+            --primary-color: green;
+            --text-color: white;
+            --secondary-color: blue;
+        } */
+           }
+        :root{
+            --primary-color: rgb(237, 20, 168);
+            --text-color: rgb(244, 235, 235);
+            --secondary-color: rgb(90, 201, 68);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&family=Stack+Sans+Notch:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Stack Sans Notch", sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 13px;
+            font-weight: bolder;
+            color: var(--text-color);
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Servsice</a></li>
+                <li><a href="/">Contect us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
