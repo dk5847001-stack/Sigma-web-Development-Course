@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Design in CSS </title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        * {
+            padding: 0;
+            margin: 10 auto;
+        }
+
+        .container {
+            margin: 70px;
+            border: 2px solid black;
+            box-shadow: 3px 3px 19px;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-areas: "nav nav nav nav"
+                "side rk dk ak"
+                "footer footer footer footer";
+                grid-row-gap: 15px;
+                grid-column-gap: 15px;
+        }
+
+        .item {
+            height: 55px;
+            border: 2px solid red;
+            box-shadow: 3px 3px 19px;
+            border-radius: 20px;
+
+        }
+
+        .item-1 {
+            grid-area: nav;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        .item-2 {
+            grid-area: side;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        .item-3 {
+            grid-area: dk;
+            background-color: rgb(167, 167, 248);
+            text-align: center;
+        }
+
+        .item-4 {
+            grid-area: ak;
+            background-color: yellow;
+            text-align: center;
+        }
+
+        .item-5 {
+            grid-area: footer;
+            background-color: violet;
+            text-align: center;
+        }
+        .item-6{
+            grid-area: rk;
+            background-color: tomato;
+            text-align: center;
+        }
+        .item-1:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+         .item-2:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+         .item-3:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+         .item-4:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+         .item-5:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+         .item-6:hover{
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-2"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-3"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-4"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-5"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-6"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+       
+    </div>
+
+     <div class="container">
+        <div class="item item-1"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-2"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-3"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-4"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-5"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+        <div class="item item-6"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+       
+    </div>
+</body>
+
+</html>
