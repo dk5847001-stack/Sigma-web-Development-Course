@@ -1,0 +1,1 @@
+var IRSBHFoc;(function(){function e(){i||(n=_ge(u),t=_ge(f),t&&n&&(o(),i=!0))}function r(){(n.value==null||n.value=="")&&_w.open("/images?FORM=IRSBH0","_self")}function o(){SmartEvent.bind(t,"mousedown",r);SmartEvent.bind(n,"keyup",function(n){n.keyCode===13&&r()})}var i=!1,n,t,u="sb_form_q",f="sb_form_go";e()})(IRSBHFoc||(IRSBHFoc={}))

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Design</title>
+    <style>
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            padding: 0;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            min-height: 4px;
+            width: 100%;
+            border: 2px solid;
+            /* display: flex; */
+            grid-template-areas: "nav1 nav2 nav3 nav4";
+            list-style: none;
+            text-align: center;
+            margin: 10px auto;
+            display: grid;
+            justify-items: center;
+            padding: 10px 0;
+            background-color: purple;
+            /* box-shadow: 0px 1px 5px 1px; */
+            box-shadow: 0px 1px 6px 2px;;
+            border-style: none;
+        }
+
+        .item1 {
+            grid-area: nav1;
+        }
+
+        .item2 {
+            grid-area: nav2;
+        }
+
+        .item3 {
+            grid-area: nav3;
+        }
+
+        .item4 {
+            grid-area: nav4;
+        }
+
+        .container {
+            margin: 70px;
+            border: 2px solid black;
+            box-shadow: 3px 3px 19px;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-areas: "nav nav nav nav"
+                "side rk dk ak"
+                "footer footer footer footer";
+            grid-row-gap: 15px;
+            grid-column-gap: 15px;
+        }
+
+        .item {
+            height: 55px;
+            border: 2px solid red;
+            box-shadow: 3px 3px 19px;
+            border-radius: 20px;
+
+        }
+
+        .item-1 {
+            grid-area: nav;
+            background-color: aqua;
+            padding: 4px;
+
+        }
+
+        .item-2 {
+            grid-area: side;
+            background-color: aquamarine;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-3 {
+            grid-area: dk;
+            background-color: rgb(167, 167, 248);
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-4 {
+            grid-area: ak;
+            background-color: yellow;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-5 {
+            grid-area: footer;
+            background-color: violet;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-6 {
+            grid-area: rk;
+            background-color: tomato;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .item-1:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        .item-2:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        .item-3:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        .item-4:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        .item-5:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        .item-6:hover {
+            background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Design2 */
+
+        :root {
+            --primary-color: purple;
+            --secondary-color: rgb(244, 187, 234);
+            --text-color: white;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            color: var(--text-color);
+            padding: 13px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div {
+            display: flex;
+        }
+
+        div.box1 {
+            width: 40vw;
+            height: 20vh;
+            border: 2px solid;
+            margin: 20px 49px 0 20px;
+            box-shadow: 0px 1px 6px 2px;
+            padding: 45px;
+            border-radius: 19px;
+            background-color: rgb(222, 244, 191);
+        }
+
+        div.box1:hover {
+            background-color: rgb(14, 0, 0);
+            color: red;
+        }
+
+        div.box2:hover {
+            background-color: rgb(14, 0, 0);
+            color: red;
+        }
+
+        div.box2 {
+            width: 40vw;
+            height: 20vh;
+            border: 2px solid;
+            margin: 20px 20px 0 10px;
+            box-shadow: 0px 1px 6px 2px;
+            padding: 45px;
+            border-radius: 19px;
+            background-color: rgb(222, 244, 191);
+        }
+
+        .laout {
+            width: 80vw;
+            border: 2px solid black;
+            height: 10vh;
+            border-radius: 49px;
+            margin: 30px auto;
+            box-shadow: 0px 1px 6px 2px;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            color: rgb(222, 0, 152);
+            padding: 10px;
+        }
+        .laout:hover{
+             background-color: white;
+            color: blue;
+            font-weight: bolder;
+        }
+/* Design_3 */
+.orangebox{
+            height: 62px;
+            width: 62px;
+            background-color:;
+            position: fixed;
+            bottom: 92px;
+            right: 23px;
+            border-radius: 90px;
+            display: grid;
+            list-style: none;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li class="item1"><img height="40px" width="40px" src="image.webp" alt=""></li>
+            <li class="item2"><img height="40px" width="40px" src="cl.webp" alt=""></li>
+            <li class="item3"><img height="40px" width="40px" src="cont.webp" alt=""></li>
+            <li class="item4"><img height="40px" width="40px" src="serv.webp" alt=""></li>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item item-1"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-2"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-3"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-4"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-5"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-6"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+
+        </div>
+
+        <div class="container">
+            <div class="item item-1"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-2"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-3"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-4"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-5"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+            <div class="item item-6"><a href="https://dilkhush735.blogspot.com">Hey! I am Dilkhush Kumar</a></div>
+
+        </div>
+    </main>
+
+    <div>
+        <div class="box box1">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+        <div class="box box2">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+    </div>
+    <div class="laout"><br>
+        Hey! Welcome to my Website
+    </div>
+
+    <div>
+        <div class="box box1">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+        <div class="box box2">Hey! everyone my name is Dilkhush Kumar from sandip university in the
+            B.Tech Department. The situated of the university in Madhubani Bihar</div>
+    </div>
+    <div class="laout"><br>
+        dilkhush735.blogspot.com/-
+    </div>
+
+    <div class="orangebox">
+         <li class="item4"><img height="70px" width="70px" src="serv.webp" alt=""></li>
+    </div>
+</body>
+
+</html>
