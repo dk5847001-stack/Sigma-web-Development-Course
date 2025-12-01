@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit - website design</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+        .right ul li span {
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+        }
+
+        .topic {
+            display: flex;
+            justify-content: center;
+        }
+
+        .topic h1 {
+            font-size: 60px;
+        }
+
+        /* .layout > .box{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-color: white;
+            border-style: none;
+            box-shadow: 0px 1px 8px;
+            border-radius: 6px;
+            margin: 10px;
+            display: flex;
+        } */
+        .layout .box {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .layout .box1 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-color: white;
+            border-style: none;
+            box-shadow: 0px 1px 8px;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .layout .box2 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-color: white;
+            border-style: none;
+            box-shadow: 0px 1px 8px;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .layout .box3 {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            background-color: white;
+            border-style: none;
+            box-shadow: 0px 1px 8px;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .Discover {
+            cursor: pointer;
+            color: rgb(250, 2, 155);
+            text-align: center;
+        }
+
+        /* Footer Design */
+        .footer .topic2 h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .footer .topic2 p {
+            text-align: center;
+        }
+        .footer .box{
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            
+        }
+        .footer .box1{
+            width: 500px;
+            border: 2px solid gray;
+            border-radius: 9px;
+            background-color: rgb(255, 226, 5);
+            align-content: center;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" />
+                            </svg></span></li>
+                    <li><span>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" />
+                            </svg></span></li>
+                    <li><span>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" />
+                            </svg></span></li>
+                    <li><span>About Us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" />
+                            </svg></span></li>
+                    <li><span><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-1-1-1.svg"
+                                alt=""></span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="layout">
+        <div class="topic">
+            <h1>UltraEdit solves the problems <br>Other text editors can't</h1>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44" color="#f50de9"
+                        fill="none" stroke="#f50de9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20 14V10.6569C20 9.83935 20 9.4306 19.8478 9.06306C19.6955 8.69552 19.4065 8.40649 18.8284 7.82843L14.0919 3.09188C13.593 2.593 13.3436 2.34355 13.0345 2.19575C12.9702 2.165 12.9044 2.13772 12.8372 2.11401C12.5141 2 12.1614 2 11.4558 2C8.21082 2 6.58831 2 5.48933 2.88607C5.26731 3.06508 5.06508 3.26731 4.88607 3.48933C4 4.58831 4 6.21082 4 9.45584V14C4 17.7712 4 19.6569 5.17157 20.8284C6.34315 22 8.22876 22 12 22M13 2.5V3C13 5.82843 13 7.24264 13.8787 8.12132C14.7574 9 16.1716 9 19 9H19.5" />
+                        <path d="M17 22C17.6068 21.4102 20 19.8403 20 19C20 18.1597 17.6068 16.5898 17 16M19 19H12" />
+                    </svg></p>
+                <p>
+                <h2>Edit huge files... with zero lag</h2>
+                </p>
+                <p>When your work involves sensitive information, you need an editor built for security and compliance.
+                    Get peace of mind with a fortified editing environment and a professional support team available
+                    24/7 to help meet your security and compliance requirements.</p>
+                <br>
+                <p class="Discover">Discover more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="purple" fill="none" stroke="#141B34" stroke-width="1.5"
+                        stroke-linejoin="round">
+                        <path
+                            d="M13 8.5H13.5V4.69635C13.5 4.31176 13.8118 4 14.1963 4C14.39 4 14.5749 4.08062 14.7066 4.22252L20.6598 10.6336C20.8785 10.8691 21 11.1786 21 11.5C21 11.8214 20.8785 12.1309 20.6598 12.3664L14.7066 18.7775C14.5749 18.9194 14.39 19 14.1963 19C13.8118 19 13.5 18.6882 13.5 18.3037V14.5C7.94555 14.5 4.94688 18.5162 4.19199 19.6847C4.06738 19.8776 3.85713 20 3.6275 20C3.28094 20 3 19.7191 3 19.3725V18.5C3 12.9772 7.47715 8.5 13 8.5Z" />
+                    </svg></p>
+            </div>
+
+            <div class="box2">
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44" color="#fb08e7"
+                        fill="none" stroke="#fb08e7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 5.5V2M11 12V9" />
+                        <path
+                            d="M13.5 2.31844C12.7694 2.11067 11.9399 2 11 2C5 2 3.5 6.50998 3.5 12C3.5 17.49 5 22 11 22C17.0001 22 18.5 17.49 18.5 12C18.5 11.4906 18.4871 10.9897 18.4589 10.5" />
+                        <path
+                            d="M12.5 7C12.5 6.53406 12.5 6.30109 12.4239 6.11732C12.3224 5.87229 12.1277 5.67761 11.8827 5.57612C11.6989 5.5 11.4659 5.5 11 5.5C10.5341 5.5 10.3011 5.5 10.1173 5.57612C9.87229 5.67761 9.67761 5.87229 9.57612 6.11732C9.5 6.30109 9.5 6.53406 9.5 7V7.5C9.5 7.96594 9.5 8.19891 9.57612 8.38268C9.67761 8.62771 9.87229 8.82239 10.1173 8.92388C10.3011 9 10.5341 9 11 9C11.4659 9 11.6989 9 11.8827 8.92388C12.1277 8.82239 12.3224 8.62771 12.4239 8.38268C12.5 8.19891 12.5 7.96594 12.5 7.5V7Z" />
+                        <path d="M4 12H18" />
+                        <circle cx="18" cy="5.5" r="2.5" />
+                    </svg></p>
+                <p>
+                <h2>Navigate your entire workspace</h2>
+                </p>
+                <p>When your work involves sensitive information, you need an editor built for security and compliance.
+                    Get peace of mind with a fortified editing environment and a professional support team available
+                    24/7 to help meet your security and compliance requirements.</p>
+                <br>
+                <p class="Discover">Discover more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="purple" fill="none" stroke="#141B34" stroke-width="1.5"
+                        stroke-linejoin="round">
+                        <path
+                            d="M13 8.5H13.5V4.69635C13.5 4.31176 13.8118 4 14.1963 4C14.39 4 14.5749 4.08062 14.7066 4.22252L20.6598 10.6336C20.8785 10.8691 21 11.1786 21 11.5C21 11.8214 20.8785 12.1309 20.6598 12.3664L14.7066 18.7775C14.5749 18.9194 14.39 19 14.1963 19C13.8118 19 13.5 18.6882 13.5 18.3037V14.5C7.94555 14.5 4.94688 18.5162 4.19199 19.6847C4.06738 19.8776 3.85713 20 3.6275 20C3.28094 20 3 19.7191 3 19.3725V18.5C3 12.9772 7.47715 8.5 13 8.5Z" />
+                    </svg></p>
+            </div>
+
+            <div class="box3">
+                <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44" color="#f507e1"
+                        fill="none" stroke="#f507e1" stroke-width="1.5" stroke-linejoin="round">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" />
+                        <path
+                            d="M8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5C10 9.32843 9.32843 10 8.5 10Z" />
+                        <path
+                            d="M15.5 17C16.3284 17 17 16.3284 17 15.5C17 14.6716 16.3284 14 15.5 14C14.6716 14 14 14.6716 14 15.5C14 16.3284 14.6716 17 15.5 17Z" />
+                        <path d="M10 8.5L17 8.5" />
+                        <path d="M14 15.5L7 15.5" />
+                    </svg></p>
+                <p>
+                <h2>Work seamlessly across any file</h2>
+                </p>
+                <p>When your work involves sensitive information, you need an editor built for security and compliance.
+                    Get peace of mind with a fortified editing environment and a professional support team available
+                    requirements.</p>
+                <br>
+                <p class="Discover">Discover more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="purple" fill="none" stroke="#141B34" stroke-width="1.5"
+                        stroke-linejoin="round">
+                        <path
+                            d="M13 8.5H13.5V4.69635C13.5 4.31176 13.8118 4 14.1963 4C14.39 4 14.5749 4.08062 14.7066 4.22252L20.6598 10.6336C20.8785 10.8691 21 11.1786 21 11.5C21 11.8214 20.8785 12.1309 20.6598 12.3664L14.7066 18.7775C14.5749 18.9194 14.39 19 14.1963 19C13.8118 19 13.5 18.6882 13.5 18.3037V14.5C7.94555 14.5 4.94688 18.5162 4.19199 19.6847C4.06738 19.8776 3.85713 20 3.6275 20C3.28094 20 3 19.7191 3 19.3725V18.5C3 12.9772 7.47715 8.5 13 8.5Z" />
+                    </svg></p>
+            </div>
+            <!-- <div class="box2"></div>
+            <div class="box3"></div> -->
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="topic2">
+            <h1>Download UltraEdit for Windows <img
+                    src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-1-1-1.svg" alt=""></h1>
+            <p>Download and try UltraEdit before you buy it! This download
+                <br> includes the full Windows version of the text
+                editor.
+            </p>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <h3>Download for mackbook ro Linux</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
