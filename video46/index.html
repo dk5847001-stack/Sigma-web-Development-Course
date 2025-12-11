@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            box-shadow: 0px 1px 5px;
+            align-content: center;
+            text-align: center;
+            width: 70px;
+            height: 70px;
+            padding: 10px auto;
+            margin: 10px auto;
+            background-color: aqua;
+            animation: all;
+            animation-name: harryKaAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.73, 0.4, 0, 1.33);
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: paused; */
+            animation: harry2 4s ease-in-out 2s infinite alternate-reverse forwards;
+        }
+
+        @keyframes harryKaAnimation {
+            from {
+                background-color: rgb(246, 214, 6);
+            }
+
+            to {
+                transform: translateX(20vw) translateY(20vh) scale(3);
+                background-color: tomato;
+            }
+        }
+
+        @keyframes harry2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            40% {
+                transform: rotate(250deg);
+            }
+
+            60% {
+                transform: rotate(300deg);
+            }
+
+            80% {
+                transform: rotate(220deg);
+            }
+
+            100% {
+                transform: rotate(400deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
