@@ -1,3 +1,4 @@
 {
-    "livePreview.hostIP": "10.10.2.66"
+    "livePreview.hostIP": "10.169.144.49",
+    "livePreview.debugOnExternalPreview": false
 }
