@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bounce</title>
+    <style>
+        .box {
+            
+            align-content: center;
+            text-align: center;
+            height: 111px;
+            width: 111px;
+            /* background-image: url(https://th.bing.com/th/id/OIP.iGdKN6OUpv3tK-KNSOqMpwHaHH?w=200&h=192&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1); */
+            /* background-position: center center;
+            object-fit: cover; */
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            animation: animateX 10s linear infinite , animateY 1s ease-out infinite alternate;
+            
+        }
+        .box img{
+            width: 121px;
+            height: 121px;
+            object-fit: cover;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+        }
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+         @keyframes animateY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 50%;
+            }
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img src="https://pngimg.com/uploads/football/football_PNG28463.png" alt="">
+        </div>
+    </div>
+    <!-- 
+   
+     -->
+</body>
+
+</html>
