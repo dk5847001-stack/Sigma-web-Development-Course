@@ -1,4 +1,5 @@
 {
     "livePreview.hostIP": "10.169.144.49",
-    "livePreview.debugOnExternalPreview": false
+    "livePreview.debugOnExternalPreview": false,
+    "liveServer.settings.port": 5501
 }
