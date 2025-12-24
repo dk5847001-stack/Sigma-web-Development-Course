@@ -1,4 +1,4 @@
-console.log("Welcome to factorial world!");
+ console.log("Welcome to factorial world!");
 
 /*let arr = [1, 2, 3, 4, 5];
 const reduser = (a,b)=> {
