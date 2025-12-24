@@ -15,7 +15,7 @@ let a = 6;
 
 function factFor(number) {
     let fac = 1;
-    for (let index = 1; index < number; index++) {
+    for (let index = 1; index <= number; index++) {
         fac = fac * index
     }
     return fac
