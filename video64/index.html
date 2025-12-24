@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let randomNumber = Math.floor(Math.random()*100)+1;
+        let first, second, third;
+        console.log("Random Number:", randomNumber);
+                /*Generate the first word*/
+        if(randomNumber <= 33){
+            first = "Crazy";
+        }
+        else if(randomNumber >33 && randomNumber <= 66){
+            first = "Amazing";
+        }
+        else{
+            first = "Fire";
+        }
+                /*Generate the second word*/
+        let randomNumber2 = Math.floor(Math.random()*100)+1;
+        if(randomNumber2 <= 33){
+            second = "Engine";
+        }
+        else if(randomNumber2 >33 && randomNumber2 <= 66){
+            second = "Foods";
+        }
+        else{
+            second = "Garments";
+        }
+
+        /*Generate the third word*/
+        let randomNumber3 = Math.floor(Math.random()*100)+1;
+        if(randomNumber3 <= 33){
+            third = "Bros";
+        }
+        else if(randomNumber3 >33 && randomNumber3 <= 66){
+            third = "Limited";
+        }
+        else{
+            third = "Hub";
+        }
+        console.log("Generated Name:", first + " " + second + " " + third);
+    </script>
+</body>
+</html>
