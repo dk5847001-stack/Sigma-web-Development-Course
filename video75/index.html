@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back function</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("I am a hacker")
+        console.log("I am not a hacker")
+        setTimeout(() => {
+            console.log("I am first time out")
+        }, 1);
+        setTimeout(() => {
+            console.log("I am second time out")
+        }, 0);
+        console.log("The end")
+
+        const callback = (arg) => {
+            console.log(arg)
+        }
+
+        const loadScript = (src, callback) => {
+           let sc = document.createElement("script");
+            sc.src = src;
+            sc.onload = callback("Harry");
+            document.head.append(sc)
+        }
+
+        loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+    </script>
+</body>
+
+</html>

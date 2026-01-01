@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey I am a box,</div>
+    </div>
+    <button id="btn">Change content</button>
+
+    <!-- --------------  Java Script  ------------ -->
+     <script>
+        let button = document.getElementById("btn")
+        button.addEventListener("click", ()=>{
+            // alert("I was clicked")
+            document.querySelector(".box").innerHTML = "<b>Yayy you were clicked</b> Enjoy your clicked"
+        })
+        button.addEventListener("dblclick", ()=>{
+            document.querySelector(".box").innerHTML = "<b>I was double clicked</b>"
+        })
+        button.addEventListener("contextmenu", ()=>{
+            alert("Don't hack us using right click please")
+        })
+        document.addEventListener("keydown", (e)=>{
+            console.log(e.key, e.keyCode)
+        })
+        document.addEventListener("contextmenu", ()=>{
+            alert("warning! Please don't right click, otherwise your device is hacked!")
+        })
+     </script>
+</body>
+</html>
