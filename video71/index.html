@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div style="display: flex;" data-createdby="Dilkhush" data-conseptby="Roshan" class="box">
+            Hey! I am a Box.
+        </div>
+    </div>
+
+    <script>
+        let div = document.createElement("div")
+        div.innerHTML = "I have been inserted <b>By Dilkhush (append = last)</b>"
+        div.setAttribute("class", "created")
+        document.querySelector(".container").append(div)
+        document.querySelector(".container").after(div)
+
+        let count = document.querySelector(".container")
+        count.insertAdjacentHTML("afterend", "<b>(aftered) I am under the water. Please help me here too much raining... iuuuuoooo</b>")
+        count.insertAdjacentHTML("afterbegin", "<b>(afterbegin) I am under the water. Please help me here too much raining... iuuuuoooo</b>")
+        count.insertAdjacentHTML("beforebegin", "<b>(beforebegin) I am under the water. Please help me here too much raining... iuuuuoooo</b>")
+
+        console.log(document.querySelector(".container").classList)
+        console.log(document.querySelector(".container").classList.add("Dilkhush"))
+        console.log(document.querySelector(".container").classList.remove("Dilkhush"))
+        console.log(document.querySelector(".container").classList.remove("red"))
+        console.log(document.querySelector(".container").classList.add("green"))
+
+        console.log(document.querySelector(".container").classList.toggle("green"))
+        console.log(document.querySelector(".container").classList.toggle("green"))
+        console.log(document.querySelector(".container").classList.toggle("green"))
+        console.log(document.querySelector(".container").classList.toggle("green"))
+
+
+        console.log("add content : " + document.querySelector(".box").innerHTML == "Hey! I am the B.Tech student at Sandip University" == true)
+        // console.log("Hidden : " + document.querySelector(".container").hidden = true)
+        console.log("Inner Html : " + document.querySelector(".box").innerHTML)
+        console.log("Inner Html : " + document.querySelector(".container").innerHTML)
+        console.log("Outer Html : " + document.querySelector(".box").outerHTML)
+        console.log("Tag Name : " + document.querySelector(".box").tagName)
+        console.log("Node Name : " + document.querySelector(".box").nodeName)
+        console.log("Text Content : " + document.querySelector(".box").textContent)
+        console.log("Text Content : " + document.querySelector(".box").textContent)
+        console.log("Has Atrribute : " + document.querySelector(".box").hasAttribute("style"))
+        console.log("Get Atrribute : " + document.querySelector(".box").getAttribute("style"))
+        console.log("set Atrribute : " + document.querySelector(".box").setAttribute("style", "display: inline"))
+        console.log("remove Atrribute : " + document.querySelector(".box").removeAttribute("style"))
+        console.log("design Mode : " + document.designMode, "on")
+        console.log("data set : " + document.querySelector(".box").dataset)
+
+    </script>
+</body>
+
+</html>

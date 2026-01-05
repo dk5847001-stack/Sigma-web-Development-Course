@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("NETFLIX_CLONE/assets/images/bg.jpg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.separation {
+    height: 3px;
+    background-color: rgb(88, 87, 87);
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel", serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero> :first-child {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.08);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 6px 16px 11px 12px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.main input {
+    padding: 13px 39px 13px 39px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(23, 23, 23, 0.5);
+    ;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    margin: auto;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secImg {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.secImg video {
+    position: absolute;
+    top: 15px;
+    right: 9px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :nth-child(1) {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0 0 0 40px;
+}
+
+.first>div :nth-child(2) {
+    font-size: 15px;
+    margin: 0 0 0 40px;
+}
+
+.feq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.feq h2 {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.feq h2:hover {
+    cursor: pointer;
+    scale: calc(1.2);
+    font-weight: bolder;
+}
+
+.feqbox svg {
+    filter: invert(1);
+}
+
+.feqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 16px;
+    max-width: 50vw;
+    margin: 20px auto;
+}
+
+.feqbox:hover {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    background-color: #414141;
+    scale: calc(1.1);
+    border-radius: 4px;
+    font-weight: bolder;
+    box-shadow: 0 0 10px gray;
+}
+
+footer {
+    color: white;
+    padding: 34px;
+}
+
+footer .Question {
+    margin: 10px 17.3vw 30px 17.3vw;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .btn-red {
+        margin: 6px 0 0 0;
+        padding: 10px 57px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn-red:hover {
+        background-color: rgba(252, 4, 4, 0.885);
+    }
+
+    .hero> :first-child {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 15px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        max-width: 60vw;
+        margin: auto;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 10px;
+        margin: 5px 0 0 0;
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 6px 0 0 0;
+
+    }
+
+    .secImg video {
+        position: absolute;
+        top: 16.5px;
+        right: 9px;
+    }
+
+    .second .secImg img {
+        width: 150px;
+    }
+
+    .second div .nd {
+        font-size: 11px;
+        margin: 0;
+    }
+
+    .second div .ndd {
+        margin: 2px 0 10px 0;
+    }
+
+    .fourth div .rth {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .fourth div .rthh {
+        margin: 2px 0 10px 0;
+    }
+
+    .third div .rd {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .third div .rdd {
+        margin: 2px 0 10px 0;
+    }
+
+    .feq h2 {
+        font-size: 20px;
+    }
+
+    footer .Question {
+        margin: 10px 12.3vw 30px 12.3vw;
+    }
+    nav{
+        max-width: 85vw;
+    }
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}

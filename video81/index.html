@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersise 14</title>
+    <style>
+        body {
+            background-color: rgb(0, 8, 0);
+            color: rgb(251, 0, 0);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Initializing Hacking...</div>
+    <script>
+        const addItem = async (item) => {
+            await randomDelay();
+            let div = document.createElement("div")
+            div.innerHTML = item;
+            document.body.append(div)
+        }
+        const randomDelay = () => {
+            return new Promise((resolve, reject) => {
+                timeout = Math.ceil(0 + Math.random() * 7)
+                setTimeout(() => {
+                    resolve()
+                }, timeout * 1000);
+            })
+        }
+
+        async function main() {
+            let t = setInterval(() => {
+                let last = document.body.getElementsByTagName("div");
+                last = last[last.length-1]
+                if(last.innerHTML.endsWith("...")){
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3)
+                }
+                else{
+                    last.innerHTML = last.innerHTML + "."
+                }
+            }, 100);
+
+            let text = ["Initialized Hacking now reading your data",
+                "Reading your Files",
+                "Password files Detected",
+                "Sending all passwords and persinal files to server",
+                "Cleaning up"]
+
+            for (const item of text) {
+              await addItem(item)
+            }
+            await randomDelay()
+                clearInterval(t)
+        }
+        main()
+    </script>
+</body>
+
+</html>

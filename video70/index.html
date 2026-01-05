@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            color: white;
+            font-weight: bolder;
+            margin: auto;
+            max-width: 60vw;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .box{
+            border: 2px solid yellow;
+            height: 45px;
+            width: 45px;
+            padding: 10px;
+            text-align: center;
+            align-content: center;
+            box-shadow: 0 0 4px;
+            cursor: pointer;
+            position: relative;
+        }
+        .box:hover{
+            border-radius: 50px;
+            transition: all 3s ease-in-out;
+            scale: calc(1.8);
+            transform: translateY(300px) rotate(720deg) skewX(20deg);
+            animation: identifier 3s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes identifier {
+            from{
+                background-color: rgb(3, 117, 71);
+            }
+            to{
+                background-color: blueviolet;
+            }
+        }
+        body {
+            background-color: rgb(53, 52, 52);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    <div class="box">Box4</div>
+    <div class="box">Box5</div>
+</div>
+
+    <script>
+        let randomNumber = Math.floor(Math.random()*100+1);
+        console.log(randomNumber)
+        if(randomNumber <=10){
+            document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "red";
+            })
+        }
+        else if(randomNumber > 10 && randomNumber <=20){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "red";
+            })
+        }
+        else if(randomNumber > 20 && randomNumber <=30){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "blue";
+            })
+        }
+        else if(randomNumber > 30 && randomNumber <=40){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "cyan";
+                e.style.color = "black";
+            })
+        }
+        else if(randomNumber > 40 && randomNumber <=50){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "purple";
+            })
+        }
+        else if(randomNumber > 50 && randomNumber <=60){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "black";
+            })
+        }
+        else if(randomNumber > 60 && randomNumber <=70){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "while";
+                e.style.color = "black";
+            })
+        }
+        else if(randomNumber > 70 && randomNumber <=80){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "gray";
+                e.style.color = "white";
+            })
+        }
+        else if(randomNumber > 80 && randomNumber <=90){
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "red";
+            })
+        }
+        else {
+             document.querySelectorAll(".box").forEach(e =>{
+                e.style.backgroundColor = "red";
+            })
+        }
+    </script>
+</body>
+</html>

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            border: 2px solid black
-            ;
+        .box {
+            border: 2px solid black;
         }
+
         .box:first-child {
             background-color: red;
         }
@@ -19,28 +19,37 @@
             font-size: 25px;
         }
 
-       p, a, .box, [data-color="primary"] {
-margin-top: 45px;
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            margin-top: 45px;
         }
-        .box:nth-child(even){
+
+        .box:nth-child(even) {
             background-color: blue;
         }
-        .boxes::before{
+
+        .boxes::before {
             content: "Dilkhush is good";
         }
-        .boxes::after{
+
+        .boxes::after {
             content: "Sigma courses is very good";
             color: red;
         }
-        ::selection{
+
+        ::selection {
             color: red;
             background-color: black;
         }
-        .box::first-letter{
+
+        .box::first-letter {
             color: brown;
             font-size: 34px;
         }
-        input::placeholder{
+
+        input::placeholder {
             color: blue;
         }
     </style>
@@ -66,7 +75,8 @@ margin-top: 45px;
             distinctio quis voluptas omnis quo velit, adipisci odit sunt accusantium deserunt debitis eaque ipsum
             aliquam illo doloremque id laudantium illum fugiat doloribus ratione dolore. Accusantium dolor corrupti sint
             eligendi voluptatibus at, non, quibusdam repellendus similique, dolorem laborum distinctio totam assumenda
-            atque labore. Pariatur, quos dolore!</div>
+            atque labore. Pariatur, quos dolore!
+        </div>
         <div class="box">Hey I am a box</div>
         <input type="text" placeholder="Type your name here">
     </div>
